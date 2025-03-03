@@ -1,42 +1,40 @@
 from PyQt5.QtCore import QTime
 
-
 win_x, win_y = 100, 100
 win_width, win_height = 1000, 600
 
-
-txt_hello = 'Welcome to the Health status detection program!'
-txt_next = 'Start'
-txt_instruction = ('This application allows you to use the Rufier test to make an initial diagnosis of your health.\n'
-                   'The Rufier test is a set of physical exercises designed to assess your cardiac performance during physical exertion.\n'
-                   'The subject lies in the supine position for 5 minutes and has their pulse rate measured for 15 seconds;\n'
-                   'then, within 45 seconds, the subject performs 30 squats.\n'
-                   'When the exercise ends, the subject lies down and their pulse is measured again for the first 15 seconds\n'
-                   'and then for the last 15 seconds of the first minute of the recovery period.\n'
-                   'Important! If you feel unwell during the test (dizziness,\n'
-                   'tinnitus, shortness of breath, etc.), stop the test and consult a physician.' )
-txt_title = 'Health'
-txt_name = 'Enter Your full name:'
-txt_hintname = "Full name"
+txt_hello = 'Selamat datang di program deteksi status kesehatan!'
+txt_next = 'Mulai'
+txt_instruction = ('Aplikasi ini memungkinkan Anda menggunakan tes Rufier untuk melakukan diagnosis awal kesehatan Anda.\n'
+                   'Tes Rufier adalah serangkaian latihan fisik yang dirancang untuk menilai kinerja jantung Anda selama aktivitas fisik.\n'
+                   'Subjek berbaring dalam posisi telentang selama 5 menit dan mengukur denyut nadi selama 15 detik;\n'
+                   'kemudian, dalam waktu 45 detik, subjek melakukan 30 squat.\n'
+                   'Ketika latihan selesai, subjek berbaring dan denyut nadinya diukur lagi untuk 15 detik pertama\n'
+                   'dan kemudian untuk 15 detik terakhir dari menit pertama periode pemulihan.\n'
+                   'Penting! Jika Anda merasa tidak enak badan selama tes (pusing,\n'
+                   'tinnitus, sesak napas, dll.), hentikan tes dan konsultasikan dengan dokter.')
+txt_title = 'Kesehatan'
+txt_name = 'Masukkan nama lengkap Anda:'
+txt_hintname = "Nama lengkap"
 txt_hintage = "0"
-txt_test1 = 'Lie on your back and take your pulse for 15 seconds. Click the "Start first test" button to start the timer.\nWrite down the result in the appropriate field.'
-txt_test2 = 'Perform 30 squats in 45 seconds. To do this, click the "Start doing squats" button\nto start the squat counter.'
-txt_test3 = 'Lie on your back and take your pulse for the first 15 seconds of the minute, then for the last 15 seconds of the minute.\nPress the "Start final test" button to start the timer.\nThe seconds that should be measured are indicated in green and the seconds that should not be measured are indicated in black. Write down the results in the appropriate fields.'
-txt_sendresults = 'Send the results'
+txt_test1 = 'Berbaring telentang dan ambil denyut nadi Anda selama 15 detik. Klik tombol "Mulai tes pertama" untuk memulai timer.\nCatat hasilnya di kolom yang sesuai.'
+txt_test2 = 'Lakukan 30 squat dalam 45 detik. Untuk melakukan ini, klik tombol "Mulai melakukan squat"\nuntuk memulai penghitung squat.'
+txt_test3 = 'Berbaring telentang dan ambil denyut nadi Anda selama 15 detik pertama dari menit, kemudian untuk 15 detik terakhir dari menit.\nTekan tombol "Mulai tes akhir" untuk memulai timer.\nDetik yang harus diukur ditunjukkan dengan warna hijau dan detik yang tidak boleh diukur ditunjukkan dengan warna hitam. Catat hasilnya di kolom yang sesuai.'
+txt_sendresults = 'Kirim hasil'
 txt_hinttest1 = '0'
 txt_hinttest2 = '0'
 txt_hinttest3 = '0'
-txt_starttest1 = 'Start the first test'
-txt_starttest2 = 'Start doing squats'
-txt_starttest3 = 'Start the final test'
+txt_starttest1 = 'Mulai tes pertama'
+txt_starttest2 = 'Mulai melakukan squat'
+txt_starttest3 = 'Mulai tes akhir'
 time = QTime(0, 0, 15)
 txt_timer = time.toString("hh:mm:ss")
-txt_age = 'Full years:'
-txt_finalwin = 'Results'
-txt_index = 'Roufier Index: '
-txt_workheart = 'Cardiac performance: '
-txt_res1 = "low. See your doctor right away!"
-txt_res2 = "satisfactory. See your doctor!"
-txt_res3 = "average. It may be worth seeing your doctor to get checked out."
-txt_res4 = "above average"
-txt_res5 = "high"
+txt_age = 'Usia penuh:'
+txt_finalwin = 'Hasil'
+txt_index = 'Indeks Roufier: '
+txt_workheart = 'Kinerja jantung: '
+txt_res1 = "rendah. Segera temui dokter Anda!"
+txt_res2 = "memuaskan. Temui dokter Anda!"
+txt_res3 = "rata-rata. Mungkin perlu menemui dokter untuk diperiksa."
+txt_res4 = "di atas rata-rata"
+txt_res5 = "tinggi"
